@@ -100,6 +100,7 @@
                 <button class="whitespace-nowrap hidden md:inline-block lg:inline-block ml-2 text-sky-50">Sign in</button>
             </div>
         </nav>
+
         <div class="grid lg:grid-cols-[1fr_300px] grid-cols-1 gap-">
             <section class="gap-4 p-4 grid grid-rows-[auto_auto_auto_1fr_auto]">
                 <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-5 m-0 ">
@@ -140,11 +141,12 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-8 h-72 shadow-lg rounded-2xl">Sales Overview</div>
-                <div class="bg-sky-100 p-8 h-72 shadow-lg rounded-2xl">
+                <div class="bg-sky-100 p-8 shadow-lg rounded-2xl">Sales Overview</div>
+
+                <div class="bg-sky-100 p-8  shadow-lg rounded-2xl">
                     <h3 class="text-lg font-semibold text-sky-700">Top selling products</h3>
                     <table class="w-full text-left text-md">
-                        <thead class="text-sky-600 border-b">
+                        <thead class="text-sky-700 border-b">
                             <tr>
                                 <th class="py-2">Products</th>
                                 <th>Value</th>
@@ -153,25 +155,91 @@
                             </tr>
                         </thead>
                         <hr>
+
                         <tbody>
-                            <tr class="border-b hover:bg-sky-100">
-                                <td>Nike v22 Running</td>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap border-inherit">
+                                    <div class="flex py-1">
+                                        <div>
+                                        <img src="./img/blue-shoe.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
+                                        </div>
+                                    
+                                        <div class=" flexflex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Nike v22 Running</h6>
+                                            <p class="text-sm text-gray-500"><span class="text-green-500 text-md">8.232</span> orders</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$130,992</td>
+                                <td>$9,500</td>
+                                <td>13 <span class="text-lg text-green-500 font">^</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap border-inherit">
+                                    <div class="flex py-1">
+                                        <div>
+                                        <img src="./img/black-mug.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
+                                        </div>
+                                        <div class=" flexflex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Business Kit (Mug + Notebook)</h6>
+                                            <p class="text-sm text-gray-500"><span class="text-green-500 text-md">12.821</span> orders</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$130,992</td>
+                                <td>$9,500</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap border-inherit">
+                                    <div class="flex py-1">
+                                        <div>
+                                        <img src="./img/black-chair.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-2" alt="">
+                                        </div>
+                                    
+                                        <div class=" flexflex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Black Chair</h6>
+                                            <p class="text-sm text-gray-500"><span class="text-green-500 text-md">2.421</span> orders</p>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
                             </tr>
-                            <tr class="border-b hover:bg-sky-100">
-                                <td>Nike v22 Running</td>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap border-inherit">
+                                    <div class="flex py-1">
+                                        <div>
+                                        <img src="./img/bang-sound.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
+                                        </div>
+                                        <div class=" flexflex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Mountain Trip Kit (Camera + Backpack)</h6>
+                                            <p class="text-sm text-gray-500"><span class="text-green-500 text-md">921</span> orders</p>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
                             </tr>
-                            <tr class="border-b hover:bg-sky-100">
-                                <td>Nike v22 Running</td>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap border-inherit">
+                                    <div class="flex py-1">
+                                        <div>
+                                        <img src="./img/photo-tools.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
+                                        </div>
+                                        <div class=" flexflex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Wireless Charger</h6>
+                                            <p class="text-sm text-gray-500"><span class="text-green-500 text-md">8.232</span> orders</p>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
                 <div class="bg-white p-8 h-36 shadow-lg rounded-2xl">Sales by country</div>
             </section>
             <div class="p-4">
