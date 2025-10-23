@@ -6,8 +6,8 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="m-2 bg-gray-800 h-screen grid grid-cols-1 lg:grid-cols-[250px_1fr] grid-rows-[60px_1fr] gap-1">
-    <aside class="hidden lg:block p-4 row-span-2">
+<body class="bg-gray-800 h-screen grid grid-cols-1 xl:grid-cols-[250px_1fr] grid-rows-[auto_1fr_1fr] ">
+    <aside class="hidden xl:block p-4 row-span-2">
         <a href="#" class="flex flex-row items-center mb-8">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-7 mr-1 fill-sky-600">
                 <path d="M12 9a1 1 0 0 1-1-1V3c0-.552.45-1.007.997-.93a7.004 7.004 0 0 1 5.933 5.933c.078.547-.378.997-.93.997h-5Z" />
@@ -101,8 +101,9 @@
             </div>
         </nav>
 
-        <div class="grid lg:grid-cols-[1fr_300px] grid-cols-1 gap-">
-            <section class="gap-4 p-4 grid grid-rows-[auto_auto_auto_1fr_auto]">
+        <!-- Main Session of page -->
+        <div class="grid lg:grid-cols-[1fr_300px] grid-cols-1 mb-8">
+            <section class="gap-4 px-3 grid grid-rows-[auto_auto_auto_1fr_auto]">
                 <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-5 m-0 ">
                     <div class="bg-sky-100 p-5 h-24 rounded-2xl shadow-lg flex justify-between items-center ">
                         <div>
@@ -143,28 +144,29 @@
 
                 <div class="bg-sky-100 p-8 shadow-lg rounded-2xl">Sales Overview</div>
 
-                <div class="bg-sky-100 p-8  shadow-lg rounded-2xl">
-                    <h3 class="text-lg font-semibold text-sky-700">Top selling products</h3>
+                <!-- Top selling products section -->
+
+                <div class="bg-sky-100 p-8 shadow-lg rounded-2xl">
+                    <h3 class="text-lg font-semibold text-sky-700 mb-4">Top selling products</h3>
                     <table class="w-full text-left text-md">
-                        <thead class="text-sky-700 border-b">
+                        <thead class="text-sky-700 border-b border-sky-200">
                             <tr>
-                                <th class="py-2">Products</th>
+                                <th>Products</th>
                                 <th>Value</th>
                                 <th>Ads Spent</th>
                                 <th>Refunds</th>
                             </tr>
                         </thead>
-                        <hr>
 
                         <tbody>
-                            <tr>
+                            <tr class="border-b border-sky-200">
                                 <td class="p-2 whitespace-nowrap border-inherit">
                                     <div class="flex py-1">
                                         <div>
                                         <img src="./img/blue-shoe.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
                                         </div>
                                     
-                                        <div class=" flexflex-col justify-center">
+                                        <div class=" flex flex-col justify-center">
                                             <h6 class="text-sky-700 font-semibold">Nike v22 Running</h6>
                                             <p class="text-sm text-gray-500"><span class="text-green-500 text-md">8.232</span> orders</p>
                                         </div>
@@ -172,32 +174,34 @@
                                 </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
-                                <td>13 <span class="text-lg text-green-500 font">^</span></td>
+                                <td>13 <span class="font-bold text-green-500">^</span></td>
                             </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap border-inherit">
+
+                            <tr class="border-b border-sky-200">
+                                <td class="p-2 whitespace-nowrap">
                                     <div class="flex py-1">
                                         <div>
                                         <img src="./img/black-mug.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
                                         </div>
-                                        <div class=" flexflex-col justify-center">
-                                            <h6 class="text-sky-700 font-semibold">Business Kit (Mug + Notebook)</h6>
+                                        <div class=" flex flex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Business Kit(Mug + Notebook)</h6>
                                             <p class="text-sm text-gray-500"><span class="text-green-500 text-md">12.821</span> orders</p>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
-                                <td>40</td>
+                                <td>40 <span class="font-bold text-green-500">^</span></td>
                             </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap border-inherit">
+
+                            <tr class="border-b border-sky-200">
+                                <td class="p-2 whitespace-nowrap">
                                     <div class="flex py-1">
                                         <div>
                                         <img src="./img/black-chair.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-2" alt="">
                                         </div>
                                     
-                                        <div class=" flexflex-col justify-center">
+                                        <div class=" flex flex-col justify-center">
                                             <h6 class="text-sky-700 font-semibold">Black Chair</h6>
                                             <p class="text-sm text-gray-500"><span class="text-green-500 text-md">2.421</span> orders</p>
                                         </div>
@@ -205,48 +209,178 @@
                                 </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
+                                <td>54 <span class="font-bold text-red-500">^</span></td>
                             </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap border-inherit">
+
+                            <tr class="border-b border-sky-200">
+                                <td class="p-2 whitespace-nowrap">
                                     <div class="flex py-1">
                                         <div>
                                         <img src="./img/bang-sound.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
                                         </div>
-                                        <div class=" flexflex-col justify-center">
-                                            <h6 class="text-sky-700 font-semibold">Mountain Trip Kit (Camera + Backpack)</h6>
+                                        <div class=" flex flex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold"> Wireless Charger</h6>
                                             <p class="text-sm text-gray-500"><span class="text-green-500 text-md">921</span> orders</p>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$130,992</td>
                                 <td>$9,500</td>
+                                <td>5 <span class="font-bold text-green-500">^</span></td>
                             </tr>
+
                             <tr>
                                 <td class="p-2 whitespace-nowrap border-inherit">
                                     <div class="flex py-1">
                                         <div>
                                         <img src="./img/photo-tools.jpg" class="inline-flex items-center justify-center h-12 rounded-xl mr-3" alt="">
                                         </div>
-                                        <div class=" flexflex-col justify-center">
-                                            <h6 class="text-sky-700 font-semibold">Wireless Charger</h6>
+                                        <div class=" flex flex-col justify-center">
+                                            <h6 class="text-sky-700 font-semibold">Mountain Trip Kit</h6>
                                             <p class="text-sm text-gray-500"><span class="text-green-500 text-md">8.232</span> orders</p>
                                         </div>
                                     </div>
                                 </td>
-                                <td>$130,992</td>
-                                <td>$9,500</td>
+                                <td class="text-gray-600">$130,992</td>
+                                <td class="text-gray-600">$9,500</td>
+                                <td class="text-gray-600">121 <span class="font-bold text-green-500">^</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="bg-white p-8 h-36 shadow-lg rounded-2xl">Sales by country</div>
+                <div class="bg-sky-100 p-8 shadow-lg rounded-2xl">
+                    <h3 class="text-lg font-semibold text-sky-700 mb-4">Sales by Country</h3>
+                    <table class="w-full text-left text-md">
+                        <tbody>
+                            <tr class="border-b border-sky-200">
+                                <td class="p-2">
+                                    <div class="flex items-center">
+                                        <img src="https://demos.creative-tim.com/soft-ui-dashboard-pro-tailwind/assets/img/icons/flags/US.png" class="inline-flex items-center justify-center h-6 rounded-sm mr-3" alt="">
+                                        <div>
+                                            <p class="text-xs mb-0 font-semibold">Country:</p>
+                                            <h6 class="text-sky-700 font-semibold">United States</h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-sky-200 ">
+                                <td class="p-2">
+                                    <div class="flex items-center">
+                                        <img src="https://demos.creative-tim.com/soft-ui-dashboard-pro-tailwind/assets/img/icons/flags/US.png" class="inline-flex items-center justify-center h-6 rounded-sm mr-3" alt="">
+                                        <div>
+                                            <p class="text-xs mb-0 font-semibold">Country:</p>
+                                            <h6 class="text-sky-700 font-semibold">United States</h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-sky-200">
+                                <td class=" p-2">
+                                    <div class="flex items-center">
+                                        <img src="https://demos.creative-tim.com/soft-ui-dashboard-pro-tailwind/assets/img/icons/flags/US.png" class="inline-flex items-center justify-center h-6 rounded-sm mr-3" alt="">
+                                        <div>
+                                            <p class="text-xs mb-0 font-semibold">Country:</p>
+                                            <h6 class="text-sky-700 font-semibold">United States</h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-sky-200">
+                                <td class="p-2">
+                                    <div class="flex items-center">
+                                        <img src="https://demos.creative-tim.com/soft-ui-dashboard-pro-tailwind/assets/img/icons/flags/US.png" class="inline-flex items-center justify-center h-6 rounded-sm mr-3" alt="">
+                                        <div>
+                                            <p class="text-xs mb-0 font-semibold">Country:</p>
+                                            <h6 class="text-sky-700 font-semibold">United States</h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <p class="text-xs mb-0 font-semibold">Sales:</p>
+                                        <h6 class="text-sky-700 font-semibold">2500</h6>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
-            <div class="p-4">
+            <div class="p-">
                 <div class="bg-white p-8 h-34 shadow-lg rounded-2xl">Salary</div>
                 <div class="bg-white p-8 h-72 shadow-lg rounded-2xl mt-3">Your Transactions</div>
             </div>
         </div>
-        <footer class="text-center grid col-span-full bg-gray-600 p-2 text-white">Footer</footer>
+        <footer class="text-center bg-gray-600 p-2 text-white grid">Footer</footer>
 </body>
 </html>
